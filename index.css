@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background: url("./files/coffee-break-flat-lay-mock-up-feminine-home-office-workspace-copyspace-inspiring-workplace-productivity-concept-business-fashion-freelance-finance-artwork-trendy-pastel-colors.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+
+
+}
+
+.container{
+    position: absolute;
+    height: 25pc;
+    width:20pc;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    box-shadow:0 0 55px black;
+}
+
+
+.addTxt{
+    display: inline-block;
+    height:8px;
+    width: 60%;
+    margin: auto;
+    top: 25px;
+    padding:20px;
+    padding-right: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.addBtn
+{  
+     display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+    
+    border: 0;
+    outline: 0;
+
+}
+.addBtn i{
+    background: rgb(8, 228, 217);
+}
+
+
+.list
+{   
+    height: 75%;
+    width:100%;
+    margin: auto;
+    background-color: gray;
+    
+   
+}
+
+.list div{
+    display: flex;
+    justify-content:space-evenly;
+    height: fit-content;
+}
+
+.list div h4{
+    display: inline-block;
+    margin: 20px;
+    height: fit-content;
+    width: fit-content;
+    word-wrap: break-word;
+}
+
+.list div button{
+    display:inline-block;
+    cursor: pointer;
+    margin:2px;
+    height: 1.5rem;
+    width:1.5rem;
+
+}
+
+
+
+
