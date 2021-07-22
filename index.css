@@ -107,7 +107,11 @@ body h1{
     width:100%;
     margin: auto;
    overflow:scroll;
+   
+   
 }
+
+
 
 .list li{
     display: flex;
@@ -124,6 +128,20 @@ body h1{
     height: fit-content;
     width: 20rem;
     word-wrap: break-word;
+    text-transform: capitalize;
+    transition: 0.3s all;
+}
+
+.list li h4:hover
+{
+    transform: translateY(5px);
+    font-size: 27px;
+}
+
+.list li strike{
+
+    color: red;
+    text-transform: capitalize;
 }
 
 .list li button{
@@ -136,3 +154,5 @@ body h1{
     margin-left: 20px;
 
 }
+
+

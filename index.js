@@ -5,15 +5,35 @@
 
 
 var elements =[];
+window.onload = function(){
+     
+    if(JSON.parse(localStorage.getItem("todo-elements"))!=null )
+    {
+      elements=   JSON.parse(localStorage.getItem("todo-elements"));
 
+
+    }
+    display();
+
+}
 function addElement(){
     if(document.querySelector(".addTxt").value.trim()!="")
     {
         elements.push(document.querySelector(".addTxt").value.trim());
        //alert(elements);
        
+        if(localStorage.getItem("todo-elements")==null )
+        {
+            localStorage.setItem("todo-elements",JSON.stringify(elements));
+
+        }else{
+            localStorage.setItem("todo-elements",JSON.stringify(elements));
+
+        }
+
         display();
     }
+    document.querySelector(".addTxt").value ="";
 }
 
 function display()
@@ -56,6 +76,14 @@ function display()
 function del(index)
 {
     elements.splice(index,1);
+    if(localStorage.getItem("todo-elements")==null )
+    {
+        localStorage.setItem("todo-elements",JSON.stringify(elements));
+
+    }else{
+        localStorage.setItem("todo-elements",JSON.stringify(elements));
+
+    }
     display();
 }
 
@@ -66,6 +94,16 @@ function strike(index)
     elements[index] = elements[index].replace("</strike>","");
     }else{
         elements[index] = "<strike>" + elements[index]+"</strike>"
+
+    }
+
+    if(localStorage.getItem("todo-elements")==null )
+    {
+        localStorage.setItem("todo-elements",JSON.stringify(elements));
+
+    }else{
+        localStorage.setItem("todo-elements",JSON.stringify(elements));
+
     }
 
     display();
