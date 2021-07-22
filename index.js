@@ -11,6 +11,7 @@ function addElement(){
     {
         elements.push(document.querySelector(".addTxt").value.trim());
        //alert(elements);
+       
         display();
     }
 }
@@ -24,7 +25,7 @@ function display()
 
     for(let i=0;i<elements.length;i++)
     {
-        const newTask = document.createElement("div");
+        const newTask = document.createElement("li");
 
         newTask.innerHTML=
         `
